@@ -1,22 +1,20 @@
 import React, {Component} from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import {StyleSheet, Text, View, Button} from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <View>
-        <Text style={styles.dummyText}>
-          Ovaj text je na prvom mestu
-        </Text>
+        <Text style={styles.dummyText}>Ovaj text je na prvom mestu</Text>
       </View>
       <View>
-      <Text style={styles.nesto}>
-        Zdravo Micule!</Text>
+        <Text style={styles.nesto}>Zdravo Micule!</Text>
       </View>
       <View>
-      <Text style={styles.drugi}>  ovo je drugi</Text>
-      </View><View>
-      <Text style={styles.cetvrti}>CETVRTI!!!</Text>
+        <Text style={styles.drugi}> ovo je drugi</Text>
+      </View>
+      <View>
+        <Text style={styles.cetvrti}>CETVRTI!!!</Text>
       </View>
 
       <Button title="Tap me!" />
@@ -26,7 +24,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 2, 
+    flex: 2,
     backgroundColor: '#000054',
     alignItems: 'center',
     justifyContent: 'center',
