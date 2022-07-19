@@ -2,7 +2,7 @@ package com.testapp;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
-import com.facebook.react.ReactRootView;
+import com.facebook.react.ReactRootScroolView;
 
 public class MainActivity extends ReactActivity {
 
@@ -16,7 +16,7 @@ public class MainActivity extends ReactActivity {
   }
 
   /**
-   * Returns the instance of the {@link ReactActivityDelegate}. There the RootView is created and
+   * Returns the instance of the {@link ReactActivityDelegate}. There the RootScroolView is created and
    * you can specify the renderer you wish to use - the new renderer (Fabric) or the old renderer
    * (Paper).
    */
@@ -31,11 +31,11 @@ public class MainActivity extends ReactActivity {
     }
 
     @Override
-    protected ReactRootView createRootView() {
-      ReactRootView reactRootView = new ReactRootView(getContext());
+    protected ReactRootScroolView createRootScroolView() {
+      ReactRootScroolView reactRootScroolView = new ReactRootScroolView(getContext());
       // If you opted-in for the New Architecture, we enable the Fabric Renderer.
-      reactRootView.setIsFabric(BuildConfig.IS_NEW_ARCHITECTURE_ENABLED);
-      return reactRootView;
+      reactRootScroolView.setIsFabric(BuildConfig.IS_NEW_ARCHITECTURE_ENABLED);
+      return reactRootScroolView;
     }
 
     @Override
