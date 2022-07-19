@@ -5,26 +5,33 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View>
+        <View style={styles.inputContainer1} />
+        <View style={styles.inputContainer2} />
+        <View style={styles.inputContainer3} />
+      </View>
+      <View>
         <Text style={styles.prvi}>Ovaj text je na prvom mestu.</Text>
-        <View>
-          <Text style={styles.prvidodatak}>ovo je dodatak na prvi.</Text>
-        </View>
+        <Text style={styles.prvidodatak}>
+          Ovo je dodatak na prvi. I tu sad ja nesto pisem, kuckam, kojestarije
+          neke... I jos neke baljezgarije da napisem da bi bilo nesto texta za
+          obradu.
+        </Text>
       </View>
       <View>
         <Text style={styles.drugi}>Ovo je drugi text.</Text>
       </View>
       <View>
-        <Text style={styles.treci}>Zdravo Micule!</Text>
+        <Text style={styles.treci}>Zdravo Micule!!!</Text>
       </View>
       <View>
         <Text style={styles.cetvrti}>I na kraju evo ga i CETVRTI!!!</Text>
       </View>
       <Button
         style={styles.roundedButton}
-        title="Klikni"
+        title="Klikni me, oujeee!!!"
         onPress={() => {
-          Alert.alert('Bravo, pritisnuo si dugme, bas si sjajan!');
-          <Text style={styles.buttonText}>continue</Text>;
+          StyleSheet, Text, View, Button, Alert
+          Alert.alert('Bravo, pritisnuo si dugme, bas si fantastican!!');
         }}
       />
     </View>
@@ -33,21 +40,25 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    paddingTop: 50,
+    paddingBottom: 50,
     backgroundColor: 'darkblue',
     alignItems: 'stretch',
-    justifyContent: 'center',
+    justifyContent: 'space-evenly',
+    alignSelf: 'flex-start',
   },
+
   prvi: {
-    marginHorizontal: 70,
-    margin: 20,
+    marginHorizontal: 50,
+    margin: 1,
     padding: 15,
     borderWidth: 10,
     borderColor: '#7f007f',
     backgroundColor: '#000000',
+    borderRadius: 50,
     textAlign: 'center',
     textAlignVertical: 'center',
-    textDecorationColor: 'aqua',
+    fontSize: 15,
     color: 'lightgreen',
   },
   drugi: {
@@ -60,6 +71,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     textAlignVertical: 'center',
     textTransform: 'capitalize',
+    fontSize: 18,
     color: 'olivedrab',
   },
   treci: {
@@ -86,18 +98,53 @@ const styles = StyleSheet.create({
     backgroundColor: '#000000',
     textAlign: 'center',
     textAlignVertical: 'center',
+    fontSize: 20,
     color: 'darkgreen',
   },
-  buttonText: {
-    color: 'limegreen',
-  },
   prvidodatak: {
-    textAlign: 'center',
-    fontWeight: '900',
-    fontSize: 25,
-    fontFamily: 'monospace',
+    fontSize: 20,
+    fontFamily: 'serif',
     fontStyle: 'italic',
-    color: 'teal',
+    color: 'aqua',
     alignSelf: 'center',
+  },
+  inputContainer1: {
+    flex: 0.01,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignSelf: 'flex-start',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    padding: 20,
+    margin: 10,
+    width: 100,
+    borderWidth: 3,
+    borderColor: 'yellowgreen',
+  },
+  inputContainer2: {
+    flex: 0.01,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignSelf: 'center',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    padding: 20,
+    margin: 10,
+    width: 100,
+    borderWidth: 3,
+    borderColor: 'olive',
+  },
+  inputContainer3: {
+    flex: 0.01,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignSelf: 'flex-end',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    padding: 20,
+    margin: 10,
+    width: 100,
+    borderWidth: 3,
+    borderColor: 'orange',
   },
 });
